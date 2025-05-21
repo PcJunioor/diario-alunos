@@ -194,8 +194,8 @@ function App() {
               <th className="flex-2">Nome</th>
               <th className="flex-1">Matrícula</th>
               <th className="flex-1">Curso</th>
-              <th className="flex-1">Bimestre</th>
-              <th className="flex-1">Ações</th>
+              <th className="flex-0">Bimestre</th>
+              <th className="flex-0">Ações</th>
             </tr>
             {alunos.map((aluno, index) => {
               return (
@@ -204,8 +204,8 @@ function App() {
                   <td className="flex-2">{aluno.nome}</td>
                   <td className="flex-1">{aluno.matricula}</td>
                   <td className="flex-1">{aluno.curso}</td>
-                  <td className="flex-1">{aluno.bimestre}</td>
-                  <td className="flex-1">
+                  <td className="flex-0">{aluno.bimestre}</td>
+                  <td className="flex-0">
                     <MdDelete
                       color="red"
                       size={25}
